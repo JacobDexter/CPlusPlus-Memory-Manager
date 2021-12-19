@@ -1,0 +1,7 @@
+﻿  GameObject.cpp
+  main.cpp
+C:\Users\Jacob\OneDrive - Staffordshire University\Year 3\Low Level Programming\Assignment\MemoryAllocationTest\MemoryAllocationTest\HeapManager.h(13,2): warning C4091: 'static ': ignored on left of 'HeapManager' when no variable is declared
+  Generating Code...
+GameObject.obj : error LNK2005: "private: static class Heap * GameObject::heap" (?heap@GameObject@@0PAVHeap@@A) already defined in main.obj
+main.obj : error LNK2001: unresolved external symbol "private: static class std::vector<class Heap *,class std::allocator<class Heap *> > HeapManager::heaps" (?heaps@HeapManager@@0V?$vector@PAVHeap@@V?$allocator@PAVHeap@@@std@@@std@@A)
+C:\Users\Jacob\OneDrive - Staffordshire University\Year 3\Low Level Programming\Assignment\MemoryAllocationTest\Debug\MemoryAllocationTest.exe : fatal error LNK1120: 1 unresolved externals
