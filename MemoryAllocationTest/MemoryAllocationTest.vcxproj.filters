@@ -18,7 +18,7 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="memoperator_override.cpp">
+    <ClCompile Include="MemoryManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Heap.cpp">
@@ -27,9 +27,12 @@
     <ClCompile Include="GameObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="HeapManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="memoperator_override.h">
+    <ClInclude Include="MemoryManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Heap.h">

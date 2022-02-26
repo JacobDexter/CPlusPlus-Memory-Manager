@@ -1,7 +1,4 @@
-﻿  GameObject.cpp
-  main.cpp
-C:\Users\Jacob\OneDrive - Staffordshire University\Year 3\Low Level Programming\Assignment\MemoryAllocationTest\MemoryAllocationTest\HeapManager.h(13,2): warning C4091: 'static ': ignored on left of 'HeapManager' when no variable is declared
-  Generating Code...
-GameObject.obj : error LNK2005: "private: static class Heap * GameObject::heap" (?heap@GameObject@@0PAVHeap@@A) already defined in main.obj
-main.obj : error LNK2001: unresolved external symbol "private: static class std::vector<class Heap *,class std::allocator<class Heap *> > HeapManager::heaps" (?heaps@HeapManager@@0V?$vector@PAVHeap@@V?$allocator@PAVHeap@@@std@@@std@@A)
-C:\Users\Jacob\OneDrive - Staffordshire University\Year 3\Low Level Programming\Assignment\MemoryAllocationTest\Debug\MemoryAllocationTest.exe : fatal error LNK1120: 1 unresolved externals
+﻿  main.cpp
+C:\Users\David\Downloads\Assignment\Assignment\MemoryAllocationTest\MemoryAllocationTest\main.cpp(22,75): warning C4291: 'void *operator new(size_t,Heap *)': no matching operator delete found; memory will not be freed if initialization throws an exception
+C:\Users\David\Downloads\Assignment\Assignment\MemoryAllocationTest\MemoryAllocationTest\memoperator_override.h(23): message : see declaration of 'operator new'
+  MemoryAllocationTest.vcxproj -> C:\Users\David\Downloads\Assignment\Assignment\MemoryAllocationTest\Debug\MemoryAllocationTest.exe

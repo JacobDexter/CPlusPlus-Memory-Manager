@@ -1,27 +1,25 @@
 #include <iostream>
 #include <vector>
 #include "GameObject.h"
-#include "memoperator_override.h"
+#include "MemoryManager.h"
 using namespace std;
 
 int main()
 {
-    HeapManager::Initialize();
+    HeapManager hManager = HeapManager();
 
-    //int value = 7;
+    Heap* heap = hManager.CreateHeap("gameobjects", "");
+    Heap* heap2 = hManager.CreateHeap("gameobjects2", "");
 
-    //int* array = new int[10];
-    //delete[] array;
+    GameObject* object = :: new(&HeapManager::GetDefaultHeap()) GameObject("GameObject1");
+    GameObject* object2 = :: new(heap) GameObject("GameObject2");
+    GameObject* object3 = :: new(heap2) GameObject("GameObject3");
+    GameObject* object4 = :: new(heap) GameObject("GameObject4");
+    GameObject* object5 = :: new(&HeapManager::GetDefaultHeap()) GameObject("GameObject5");
 
-    //int* array2 = (int*)malloc(sizeof(int) * 10);
-    //free(array2);
-
-    //float* test = new float(999.0f);
-    //delete test;
-
-    GameObject* object = (GameObject*) ::operator new(sizeof(GameObject));
     delete object;
-
-
-    //cout << "Number: " << value << endl;
+    delete object4;
+    delete object2;
+    delete object5;
+    delete object3;
 }

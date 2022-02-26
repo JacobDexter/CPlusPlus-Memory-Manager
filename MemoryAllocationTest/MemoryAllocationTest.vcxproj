@@ -140,14 +140,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Heap.cpp" />
+    <ClCompile Include="HeapManager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="GameObject.cpp" />
-    <ClCompile Include="memoperator_override.cpp" />
+    <ClCompile Include="MemoryManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Heap.h" />
     <ClInclude Include="HeapManager.h" />
-    <ClInclude Include="memoperator_override.h" />
+    <ClInclude Include="MemoryManager.h" />
     <ClInclude Include="GameObject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

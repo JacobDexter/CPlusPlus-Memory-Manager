@@ -1,13 +1,24 @@
 #pragma once
 #include "Heap.h"
 #include <vector>
+#include <unordered_map>
 
-static class HeapManager
+class Heap;
+
+class HeapManager
 {
 public:
-	static void Initialize() { Heap* defHeap{}; defHeap->AddBytesAllocated(1000); heaps.push_back(defHeap); };
-	static Heap* GetDefaultHeap() { return heaps.front(); };
-	static void CreateHeap(size_t bytes) { Heap* heap{}; heap->AddBytesAllocated(bytes); heaps.push_back(heap); };
+	void InitManager();
+	static Heap* CreateHeap(std::string name, std::string parent);
+	static void ClearHeaps();
+	static void Debug();
+public:
+	//getters
+	static Heap& GetDefaultHeap();
+	static Heap* GetHeap(std::string name) { return heaps[name]; };
+
 private:
-	static std::vector<Heap*> heaps;
+	static std::unordered_map<std::string, Heap*> heaps;
+	static Heap defaultHeap;
+	static Heap* rootHeap;
 };

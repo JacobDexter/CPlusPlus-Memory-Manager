@@ -1,25 +1,25 @@
 #include "GameObject.h"
 
-GameObject::GameObject()
+GameObject::GameObject(std::string name) : _name(name)
 {
-	cout << "Constructor Called." << endl;
+	std::cout << "[Log] " << _name << " constructor called." << std::endl;
 }
 
 GameObject::~GameObject()
 {
-	cout << "Destructor Called." << endl;
+	std::cout << "[Log] " << _name << " destructor called." << std::endl;
 }
 
 void* GameObject::operator new(size_t size)
 {
-	cout << "GameObject New Called" << endl;
+	std::cout << "[Log] GameObject new override called" << std::endl << std::endl;
 
 	return ::operator new (size);
 }
 
-void GameObject::operator delete(void* pMem, size_t size)
+void GameObject::operator delete(void* pMem)
 {
 	::operator delete (pMem);
 
-	cout << "GameObject Delete Called" << endl;
+	std::cout << "[Log] GameObject delete override called" << std::endl << std::endl;
 }

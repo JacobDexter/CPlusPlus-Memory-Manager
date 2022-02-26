@@ -1,0 +1,8 @@
+﻿  HeapManager.cpp
+c1xx : fatal error C1083: Cannot open source file: 'HeapManager.cpp': No such file or directory
+  main.cpp
+C:\Users\d016474j\OneDrive - Staffordshire University\Year 3\Low Level Programming\Assignment\MemoryAllocationTest\MemoryAllocationTest\main.cpp(22,75): warning C4291: 'void *operator new(size_t,Heap *)': no matching operator delete found; memory will not be freed if initialization throws an exception
+C:\Users\d016474j\OneDrive - Staffordshire University\Year 3\Low Level Programming\Assignment\MemoryAllocationTest\MemoryAllocationTest\memoperator_override.h(23): message : see declaration of 'operator new'
+  memoperator_override.cpp
+C:\Users\d016474j\OneDrive - Staffordshire University\Year 3\Low Level Programming\Assignment\MemoryAllocationTest\MemoryAllocationTest\memoperator_override.cpp(14,22): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
