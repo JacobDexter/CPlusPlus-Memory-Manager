@@ -1,17 +1,18 @@
 #pragma once
 #include <iostream>
-
 class Heap;
+using namespace std;
 
 class GameObject
 {
 public:
-	GameObject(std::string name);
+	GameObject();
 	~GameObject();
-
 public:
 	void* operator new (size_t size);
 	void operator delete (void* pMem);
 private:
-	std::string _name;
+	Heap* heap;
 };
+
+//Heap* GameObject::heap = NULL;

@@ -25,7 +25,7 @@ public:
 	//new overload
 	static void* operator new (size_t size);
 	//debug heap
-	void Debug();
+	void HeapWalk();
 public:
 	//child heap
 	Heap* _child = NULL;

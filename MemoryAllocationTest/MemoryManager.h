@@ -11,7 +11,7 @@ struct Header
 	Header* previous = NULL;
 	Header* next = NULL;
 	int checkValue = 0xDEADC0DE;
-};
+}; 
 
 struct Footer
 {
@@ -20,5 +20,6 @@ struct Footer
 	int checkValue = 0xDEADC0DE;
 };
 
+//overrides
 void* operator new (size_t size, Heap* heap);
 void operator delete (void* pMem);

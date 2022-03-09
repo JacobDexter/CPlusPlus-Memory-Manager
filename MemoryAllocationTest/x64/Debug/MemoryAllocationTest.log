@@ -1,3 +1,17 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(519,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (MemoryAllocationTest-D105-14.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  GameObject.cpp
-  MemoryAllocationTest.vcxproj -> C:\Users\d016474j\Documents\GitHub\CPlusPlus-Memory-Manager\x64\Debug\MemoryAllocationTest.exe
+  HeapManager.cpp
+  main.cpp
+C:\Users\d016474j\OneDrive - Staffordshire University\Year 3\Low Level Programming\Assignment\MemoryAllocationTest\MemoryAllocationTest\main.cpp(14,75): warning C4291: 'void *operator new(size_t,Heap *)': no matching operator delete found; memory will not be freed if initialization throws an exception
+C:\Users\d016474j\OneDrive - Staffordshire University\Year 3\Low Level Programming\Assignment\MemoryAllocationTest\MemoryAllocationTest\MemoryManager.h(24): message : see declaration of 'operator new'
+C:\Users\d016474j\OneDrive - Staffordshire University\Year 3\Low Level Programming\Assignment\MemoryAllocationTest\MemoryAllocationTest\main.cpp(15,50): warning C4291: 'void *operator new(size_t,Heap *)': no matching operator delete found; memory will not be freed if initialization throws an exception
+C:\Users\d016474j\OneDrive - Staffordshire University\Year 3\Low Level Programming\Assignment\MemoryAllocationTest\MemoryAllocationTest\MemoryManager.h(24): message : see declaration of 'operator new'
+C:\Users\d016474j\OneDrive - Staffordshire University\Year 3\Low Level Programming\Assignment\MemoryAllocationTest\MemoryAllocationTest\main.cpp(16,51): warning C4291: 'void *operator new(size_t,Heap *)': no matching operator delete found; memory will not be freed if initialization throws an exception
+C:\Users\d016474j\OneDrive - Staffordshire University\Year 3\Low Level Programming\Assignment\MemoryAllocationTest\MemoryAllocationTest\MemoryManager.h(24): message : see declaration of 'operator new'
+C:\Users\d016474j\OneDrive - Staffordshire University\Year 3\Low Level Programming\Assignment\MemoryAllocationTest\MemoryAllocationTest\main.cpp(17,50): warning C4291: 'void *operator new(size_t,Heap *)': no matching operator delete found; memory will not be freed if initialization throws an exception
+C:\Users\d016474j\OneDrive - Staffordshire University\Year 3\Low Level Programming\Assignment\MemoryAllocationTest\MemoryAllocationTest\MemoryManager.h(24): message : see declaration of 'operator new'
+C:\Users\d016474j\OneDrive - Staffordshire University\Year 3\Low Level Programming\Assignment\MemoryAllocationTest\MemoryAllocationTest\main.cpp(18,76): warning C4291: 'void *operator new(size_t,Heap *)': no matching operator delete found; memory will not be freed if initialization throws an exception
+C:\Users\d016474j\OneDrive - Staffordshire University\Year 3\Low Level Programming\Assignment\MemoryAllocationTest\MemoryAllocationTest\MemoryManager.h(24): message : see declaration of 'operator new'
+  MemoryPool.cpp
+  Generating Code...
+  LINK : C:\Users\d016474j\OneDrive - Staffordshire University\Year 3\Low Level Programming\Assignment\MemoryAllocationTest\x64\Debug\MemoryAllocationTest.exe not found or not built by the last incremental link; performing full link
+  MemoryAllocationTest.vcxproj -> C:\Users\d016474j\OneDrive - Staffordshire University\Year 3\Low Level Programming\Assignment\MemoryAllocationTest\x64\Debug\MemoryAllocationTest.exe

@@ -55,13 +55,15 @@ void Heap::RemoveBytesAllocated(size_t bytes, Header* header)
 		header->previous->next = header->next;
 }
 
-void Heap::Debug()
+void Heap::HeapWalk()
 {
 	if (_head != NULL)
 	{
 		//header size
 		size_t size = sizeof(Header);
 		Header* currentHeader = _head;
+
+		cout << "Heap walk for: " << _name << endl;
 
 		while (currentHeader != NULL)
 		{
@@ -79,6 +81,8 @@ void Heap::Debug()
 			//next list element
 			currentHeader = currentHeader->next;
 		}
+
+		cout << endl;
 	}
 	else
 	{

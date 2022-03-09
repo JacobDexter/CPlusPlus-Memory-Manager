@@ -45,8 +45,8 @@ Heap& HeapManager::GetDefaultHeap()
 void HeapManager::Debug()
 {
 	for (auto i = heaps.begin(); i != heaps.end(); i++) {
-		//(*i)->Debug();
+		//(*i)->HeapWalk();
 	}
 
-	defaultHeap.Debug();
+	defaultHeap.HeapWalk();
 }
